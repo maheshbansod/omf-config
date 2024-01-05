@@ -1,7 +1,7 @@
 # aliases
 alias vim=nvim
 alias cat=bat
-alias ls=exa
+alias ls=eza
 alias t=todo
 alias grep=rg
 
