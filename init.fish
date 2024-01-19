@@ -9,6 +9,10 @@ abbr --add l ls
 
 # functions
 
+function beep -d "send bell to stdout";
+  printf \\a
+end
+
 function open-project -d "CD to a directory in the projects directory";
   set -l projects_dir projects
   set -l red "#FF0000"
