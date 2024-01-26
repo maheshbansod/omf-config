@@ -20,7 +20,7 @@ function open-project -d "CD to a directory in the projects directory";
   set -l lines 5
   set -l prompt "Project >"
   set -l dirname (find ~/$projects_dir -maxdepth 1 -mindepth 1 -type d -printf "%f\n" | dmenu -b -p "$prompt" --nf "$green" --sb "$red" -l $lines --font "FiraCode-21")
-  if [ -n "$dirname" ]; then
+  if test -n "$dirname"
     cd ~/"$projects_dir"/"$dirname" || return
   end
 end
