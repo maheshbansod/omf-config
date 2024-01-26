@@ -6,6 +6,7 @@ alias t=todo
 alias grep=rg
 
 abbr --add l ls
+abbr --add vim. vim .
 
 # functions
 
